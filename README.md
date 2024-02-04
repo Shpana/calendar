@@ -1,5 +1,9 @@
 # calendar
 
+<p align="center">
+    <img src="/promo/promo.gif">
+</p>
+
 Школьный проект; календарь с минимальным функционалом. Умеет только рисовать сетку из дней в выбранном году и отображать, прописанные в коде события (такие как Новый год, день святого Валентина, день программиста и тд).
 
 Написано все на C++ с использованием библиотек [SFML](https://github.com/SFML/SFML), [ImGui](https://github.com/ocornut/imgui) и [ImGui-SFML](https://github.com/SFML/imgui-sfml).

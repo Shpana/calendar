@@ -4,8 +4,8 @@
 #include "imgui-SFML.h"
 
 App::App(sf::VideoMode mode, std::string title) {
-	_window = new sf::RenderWindow(mode, title);
-
+	_window = 
+		std::make_shared<sf::RenderWindow>(mode, title);
 	_window->setFramerateLimit(_frame_rate_limit);
 }
 
@@ -23,7 +23,7 @@ void App::run() {
 	ImGui::SFML::Shutdown();
 }
 
-void App::apply_process_handle(std::function<void()> handle) {
+void App::set_on_process_callback(std::function<void()> handle) {
 	_on_process = handle;
 }
 

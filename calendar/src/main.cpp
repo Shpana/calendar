@@ -9,9 +9,9 @@ int main() {
         sf::VideoMode(800, 600), "Calendar"
     };
 
-    static bool must_show = true;
+    bool must_show = true;
 
-    app.apply_process_handle([]() {
+    app.set_on_process_callback([&]() {
         show_calendar(must_show);
     });
     app.run();
